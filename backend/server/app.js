@@ -10,7 +10,6 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
-// Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => {

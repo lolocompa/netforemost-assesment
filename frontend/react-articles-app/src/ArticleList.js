@@ -1,4 +1,3 @@
-// src/ArticleList.js
 
 import React, { useState, useEffect } from "react";
 
@@ -9,10 +8,9 @@ const ArticleList = () => {
   console.log(articles);
 
   useEffect(() => {
-    // Fetch articles from the API
     const fetchArticles = async () => {
       try {
-        const response = await fetch("/articles"); // Use the appropriate endpoint
+        const response = await fetch("/articles"); 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
